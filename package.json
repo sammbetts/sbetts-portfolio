@@ -1,0 +1,44 @@
+{
+  "name": "sbetts-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://sammbetts.github.io/samantha-betts/",
+  "scripts": {
+    "deploy": "yarn build && gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "npx babel --watch components --out-dir dist  --presets react-app/prod",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "react": "^18.0.24",
+    "react-dom": "^18.0.8",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
