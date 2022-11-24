@@ -14,7 +14,24 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 </head>
 <body class="main-content">
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
     <header class="container header active" id="home">
+        <div class="theme-btn">
+            <i class="fas fa-adjust"></i>
+        </div>
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
@@ -34,24 +51,8 @@
             </div>
         </div>
     </header>
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div>
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
-    <script src="app.js"></script>
+    <script src="components/ThemeToggle.js"></script>
+    <script src="dist/blog/BlogContainer.js"></script>
     <main>
         <section class="container about" id="about">
             <div class="main-title">
@@ -81,19 +82,31 @@
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">2+</p>
-                            <p class="small-text">Years <br /> coding experience</p>
+                            <p class="small-text">Years <br /> Coding experience</p>
                         </div>
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">8</p>
-                            <p class="small-text">Published Blogs</p>
+                            <p class="large-text">05-08</p>
+                            <p class="small-text">ICT diploma Northampton / Nottingham</p>
                         </div>
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">5+</p>
-                            <p class="small-text">Charity initiatives supported</p>
+                            <p class="large-text">CFG</p>
+                            <p class="small-text">Intro to web development</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">City</p>
+                            <p class="small-text">University - Creative Writing</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">5</p>
+                            <p class="small-text">Blog Publications</p>
                         </div>
                     </div>
                 </div>
@@ -182,28 +195,32 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2023 - present</p>
-                    <h5>DevEx Engineer<span> - Ovo Energy</span></h5>
+                    <h5>DevEx Engineer</h5>
+                    <p><span>OVO Energy</span></p>
                 </div>
                 <div class="timeline-item">
                     <div class="tl-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2021 - 2023</p>
-                    <h5>Junior Platform Engineer (DX)<span> - DAZN</span></h5>
+                    <h5>Junior Platform Engineer (DX)</h5>
+                    <p><span>DAZN</span></p>
                 </div>
                 <div class="timeline-item">
                     <div class="tl-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2019 - 2021</p>
-                    <h5>Tech Assistant<span> - DAZN</span></h5>
+                    <h5>Tech Assistant</h5>
+                    <p><span>DAZN</span></p>
                 </div>
                 <div class="timeline-item">
                     <div class="tl-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2017 - 2019</p>
-                    <h5>Executive Assistant<span> - Second Home</span></h5>
+                    <h5>Executive Assistant</h5>
+                    <p><span>Second Home</span></p>
                 </div>
             </div>
         </section>
@@ -213,8 +230,7 @@
                     <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
                 </div>
                 <div class="blogs">
-                    <div type="text/babel" id="blog_container"></div>
-                    <script type="text/babel" src="dist/blog/BlogContainer.js"></script>
+                    <div type="text/babel" id="blog-container"></div>
                 </div>
             </div>
         </section>

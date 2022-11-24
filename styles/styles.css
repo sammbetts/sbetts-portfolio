@@ -223,11 +223,13 @@ section {
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
+  align-items: center;
 }
 .about-container .right-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  margin-top: 1rem;
 }
 .about-container .right-about .about-item {
   border: 1px solid var(--color-grey-5);
@@ -269,12 +271,12 @@ section {
   background-color: var(--color-grey-5);
 }
 .about-container .left-about {
-  padding-right: 5rem;
+  padding-right: 4.5rem;
 }
 .about-container .left-about p {
   line-height: 2rem;
-  padding: 1rem;
   color: var(--color-grey-1);
+  margin-top: 2rem;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -649,6 +651,7 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 6.3rem;
+  line-height: 100px;
 }
 
 .about-container .left-about p {
@@ -900,7 +903,9 @@ section {
   max-height: "310px";
   border-radius: "10px";
   box-shadow: "0px 2px 3px";
-  hover-box-shadow: "0px 10px 20px";
+}
+.blog.tileContainer:hover {
+  box-shadow: "0px 10px 20px";
 }
 
 .blog.image {

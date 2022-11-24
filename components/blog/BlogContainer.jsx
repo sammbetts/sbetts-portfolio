@@ -31,4 +31,4 @@ export function BlogContainer() {
   return <div class="blog.container">{displayBlogs()}</div>;
 };
 
-ReactDOM.render((<BlogContainer/>),document.getElementById("blog_container"));
+ReactDOM.render((<BlogContainer/>),document.getElementById(".blog-container"));

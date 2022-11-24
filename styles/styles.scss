@@ -206,10 +206,12 @@ section {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
     padding-bottom: 5rem;
+    align-items: center;
     .right-about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
+        margin-top: 1rem;
         .about-item {
             border: 1px solid var(--color-grey-5);
             border-radius: 5px;
@@ -252,11 +254,11 @@ section {
     }
 
     .left-about {
-        padding-right: 5rem;
+        padding-right: 4.5rem;
         p {
             line-height: 2rem;
-            padding: 1rem;
             color: var(--color-grey-1);
+            margin-top: 2rem;
         }
         h4 {
             font-size: 2rem;
@@ -606,6 +608,7 @@ section {
             transform: translate(-50%, -50%);
             font-weight: 800;
             font-size: 6.3rem;
+            line-height: 100px;
         }
     }
 }
